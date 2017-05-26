@@ -119,7 +119,12 @@ int Player::getSpeed()
 void Player::levelUp()//level up and prompt the user for which state they want to increase
 {
 	if(level >= MAX_LEVEL)
+	{
+		cout << "\n## You've leveled all the way up! While you can't increase your stats,"
+			<< " your health will be refreshed before the next battle. ##\n" << endl
+		currHealth = maxHealth;
 		return;
+	}
 	cout << "\n########## LEVEL  UP ##########\n" << endl;
 	level++;
 	maxHealth += 100;
