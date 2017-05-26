@@ -121,7 +121,7 @@ void Player::levelUp()//level up and prompt the user for which state they want t
 	if(level >= MAX_LEVEL)
 	{
 		cout << "\n## You've leveled all the way up! While you can't increase your stats,"
-			<< " your health will be refreshed before the next battle. ##\n" << endl
+			<< " your health will be refreshed before the next battle. ##" << endl
 		currHealth = maxHealth;
 		return;
 	}
