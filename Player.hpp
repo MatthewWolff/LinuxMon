@@ -30,7 +30,7 @@ private:
 
 public:
 	//Globals
-	const int MAX_LEVEL = 18;
+	static const int MAX_LEVEL = 18;
 	
 	//Constructor
 	Player();
